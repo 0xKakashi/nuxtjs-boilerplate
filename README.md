@@ -2,21 +2,47 @@
 
 > Nuxt.js SPA Template
 
-## Build Setup
+---
+
+__Documentation__
+* [Nuxt.js](https://nuxtjs.org)
+* [Tailwind.css](https://tailwindcss.com/)
+
+__Nuxt.js Modules__
+* [Nuxt.js PWA](https://pwa.nuxtjs.org/)
+* [Nuxt.js Axios](https://axios.nuxtjs.org/)
+
+---
+
+## DEVELOPMENT
 
 ``` bash
-# install dependencies
+# Install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Serve with hot reload at localhost:3000
 $ npm run dev
+```
 
-# build for production and launch server
+---
+
+## BUILD
+
+```bash
+# Build for production and launch server
 $ npm run build
 $ npm start
 
-# generate static project
+# Generate static project
 $ npm run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+---
+
+## DEPLOYMENT
+
+```bash
+# Deploy to S3
+$ npm deploy
+```
+

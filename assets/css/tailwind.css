@@ -1,62 +1,54 @@
 /**
- * This injects Tailwind's base styles, which is a combination of
- * Normalize.css and some additional base styles.
- *
- * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/preflight";
+ * @name preflight
+ * @desc injects tailwind's base styles
+ * 
+ * @note if using `postcss-import`, use this import instead:
+ *   @import "tailwindcss/preflight";
  */
 @tailwind preflight;
 
 /**
- * This injects any component classes registered by plugins.
+ * @name components
+ * @desc injects any component classes registered by plugins
  *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
+ * @note if using `postcss-import`, use this import instead:
+ *   @import "tailwindcss/components";
  */
 @tailwind components;
 
 /**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
+ * @name custom components
+ * @desc custom classes loaded *before* the utilities
+ *   so that the utilities could still override them.
  *
  * Example:
+ *   .btn { ... }
+ *   .form-input { ... }
  *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
+ * @note if using a preprocessor or `postcss-import`:
+ *   @import "components/buttons";
+ *   @import "components/forms";
  */
 
 /**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
+ * @name utilities
+ * @desc injects all of tailwind's utility classes
+ *   generated based on `tailwing.config.js` file.
  *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
+ * @note if using `postcss-import`, use this import instead:
+ *   @import "tailwindcss/utilities";
  */
 @tailwind utilities;
 
 /**
- * Here you would add any custom utilities you need that don't come out of the
- * box with Tailwind.
+ * @name custom utilities
+ * @desc add custom utilities
  *
- * Example :
+ * Example:
+ *   .bg-pattern-graph-paper { ... }
+ *   .skew-45 { ... }
  *
- * .bg-pattern-graph-paper { ... }
- * .skew-45 { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "utilities/background-patterns";
- * @import "utilities/skew-transforms";
+ * @note if using a preprocessor or `postcss-import`:
+ *   @import "utilities/background-patterns";
+ *   @import "utilities/skew-transforms";
  */

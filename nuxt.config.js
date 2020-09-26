@@ -2,10 +2,7 @@ import pkg from './package'
 
 export default {
   mode: 'spa',
-
-  /*
-   ** Headers of the page
-   */
+  ssr: false,
   head: {
     title: pkg.name,
     meta: [
@@ -15,52 +12,47 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-
-  /*
-   ** Global CSS
-   */
-  css: ['~/assets/css/tailwind.css'],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
-
-  /*
-   ** Nuxt.js modules
-   */
+  loading: { 
+    color: '#fff',
+    // failedColor: '#11ee88',
+    // height: '2px',
+    // throttle: 300
+  },
+  // loadingIndicator: { name: '~/static/loading.html' },
+  // loadingIndicator: {
+  //   name: 'circle',
+  //   color: '#11ee88',
+  //   background: '#fff' 
+  // },
+  css: [
+    '~/assets/css/tailwind.css',
+    '~/assets/css/transition.css'
+  ],
+  components: true,
+  plugins: [
+    '~/plugins/initialize.client.js'
+  ],
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
-
-  /*
-   ** Build configuration
-   */
+  axios: {},
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    postcss: {
+      plugins: {
+        tailwindcss: './tailwind.config.js'
+      }
+    },
     extend(config, ctx) {
-      // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            fix: true
+          }
         })
       }
     }
