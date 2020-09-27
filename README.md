@@ -12,6 +12,10 @@ __Nuxt.js Modules__
 * [Nuxt.js PWA](https://pwa.nuxtjs.org/)
 * [Nuxt.js Axios](https://axios.nuxtjs.org/)
 
+__Assets__
+* [DevIcons](https://github.com/devicons/devicon)
+* [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+
 ---
 
 ## DEVELOPMENT
