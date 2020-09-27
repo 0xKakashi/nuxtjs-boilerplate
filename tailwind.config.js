@@ -7,10 +7,14 @@ module.exports = {
   important: true,
   purge: false,
   future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
   theme: {
+    fontFamily: {
+      'sans': ['Helvetica Neue', 'Noto Sans', 'Arial', 'sans-serif'],
+      'serif': ['Bitstream Vera Serif', 'Georgia', 'serif']
+    },
     extend: {
       borderWidth: {
         '3': '3px',

@@ -2,8 +2,6 @@ require('dotenv').config()
 import pkg from './package'
 
 export default {
-  mode: 'spa',
-  ssr: false,
   head: {
     title: pkg.name,
     meta: [
@@ -14,6 +12,8 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   // env: {},
+  target: 'static',
+  ssr: false,
   loading: { 
     color: '#fff',
     // failedColor: '#11ee88',
