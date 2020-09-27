@@ -1,0 +1,89 @@
+/**
+ * @name keyframes
+ * @desc transition animations
+ */
+ @keyframes topDown {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes bottomUp {
+  0% { transform: translate3d(0, 100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes rightIn {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes rightOut {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(100%, 0, 0); }
+}
+@keyframes leftIn {
+  0% { transform: translate3d(-100%, 0, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes leftOut {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+/**
+ * @name default
+ * @desc default transition animation
+ *   for page routing
+ */
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s ease-out;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+/**
+ * @name index
+ * @desc index transition animation
+ *   for top level pages
+ */
+.index-enter {
+  /* state for entry | departure */
+  opacity: 0;
+}
+.index-enter-active {
+  /* transition phase | leftIn */
+  animation: leftIn 0.35s ease-out;
+}
+.index-enter-to {
+  /* after transition and entry */
+  transition: opacity 0.38s ease-out;
+}
+.index-leave-active {
+  /* transition phase | rightOut */
+  animation: rightOut 0.35s ease-in 0.1s;
+}
+.index-leave-to {
+  /* after transition and entry */
+  transition: opacity 0.35s ease-in;
+}
+/**
+ * @name detail
+ * @desc detail transition animation
+ *   for secondary pages
+ */
+.detail-enter {
+  /* state for entry | departure */
+  opacity: 0;
+}
+.detail-enter-active {
+  /* transition phase | rightIn */
+  animation: rightIn 0.35s ease-out;
+}
+.detail-enter-to {
+  /* after transition and entry */
+  transition: opacity 0.38s ease-out;
+}
+.detail-leave-active {
+  /* transition phase | leftOut */
+  animation: leftOut 0.35s ease-in 0.1s;
+}
+.detail-leave-to {
+  /* after transition and entry */
+  transition: opacity 0.35s ease-in;
+}
