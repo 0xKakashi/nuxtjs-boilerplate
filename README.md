@@ -24,6 +24,9 @@ __Assets__
 # Install dependencies
 $ npm install
 
+# Create `.env` variable file for environment
+$ touch .env.dev
+
 # Serve with hot reload at localhost:3000
 $ npm run dev
 ```
@@ -33,6 +36,9 @@ $ npm run dev
 ## BUILD
 
 ```bash
+# Configure production `.env` variables
+$ touch .env.prod
+
 # Build for production and launch server
 $ npm run build
 $ npm start

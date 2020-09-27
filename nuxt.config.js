@@ -1,3 +1,4 @@
+require('dotenv').config()
 import pkg from './package'
 
 export default {
@@ -12,6 +13,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  // env: {},
   loading: { 
     color: '#fff',
     // failedColor: '#11ee88',
@@ -34,9 +36,18 @@ export default {
   ],
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/auth'
   ],
-  axios: {},
+  // auth: {
+  //   strategies: {
+  //     local: {
+  //     }
+  // },
+  // axios: {},
+  buildModules: [
+    '@nuxtjs/dotenv'
+  ],
   build: {
     postcss: {
       plugins: {
