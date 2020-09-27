@@ -14,6 +14,8 @@ __Documentation__
 __Nuxt.js Modules__
 * [Nuxt.js PWA](https://pwa.nuxtjs.org/)
 * [Nuxt.js Axios](https://axios.nuxtjs.org/)
+* [Nuxt.js Auth](https://auth.nuxtjs.org/)
+* [Nuxt.js Dotenv](https://github.com/nuxt-community/dotenv-module)
 
 __Assets__
 * [DevIcons](https://github.com/devicons/devicon)
