@@ -17,6 +17,7 @@ __Nuxt.js Modules__
 * [Nuxt.js PWA](https://pwa.nuxtjs.org/)
 * [Nuxt.js Axios](https://axios.nuxtjs.org/)
 * [Nuxt.js Auth](https://auth.nuxtjs.org/)
+* [Nuxt.js Google Tag Manager](https://github.com/nuxt-community/gtm-module)
 * [Nuxt.js Dotenv](https://github.com/nuxt-community/dotenv-module)
 * [Nuxt.js Moment](https://momentjs.com/)
 
@@ -32,7 +33,6 @@ __Assets__
 * API Class Plugins
   * Web3
 * Vuex Analytic Tracking
-
 
 ---
 

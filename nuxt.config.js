@@ -11,12 +11,12 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  target: 'static',
+  ssr: false,
   // env: {
   //   apiURL: process.env.API_URL,
   //   cdnURL: process.env.CDN_URL
   // },
-  target: 'static',
-  ssr: false,
   loading: { 
     color: '#fff',
     // failedColor: '#11ee88',
@@ -34,14 +34,19 @@ export default {
     '~/assets/css/transition.css'
   ],
   components: true,
-  plugins: [
-    '~/plugins/initialize.client.js',
-    '~/plugins/web3.client.js'
-  ],
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    '@nuxtjs/gtm'
+  ],
+  buildModules: [
+    '@nuxtjs/dotenv',
+    '@nuxtjs/moment'
+  ],
+  plugins: [
+    '~/plugins/initialize.client.js',
+    '~/plugins/web3.client.js'
   ],
   // auth: {
   //   strategies: {
@@ -49,10 +54,12 @@ export default {
   //     }
   // },
   // axios: {},
-  buildModules: [
-    '@nuxtjs/dotenv',
-    '@nuxtjs/moment'
-  ],
+  gtm: {
+    enabled: false,
+    id: process.env.GTM_ID,
+    pageTracking: true,
+    // variables: {}    
+  },
   build: {
     postcss: {
       plugins: {
