@@ -18,6 +18,7 @@ __Nuxt.js Modules__
 * [Nuxt.js Axios](https://axios.nuxtjs.org/)
 * [Nuxt.js Auth](https://auth.nuxtjs.org/)
 * [Nuxt.js Dotenv](https://github.com/nuxt-community/dotenv-module)
+* [Nuxt.js Moment](https://momentjs.com/)
 
 __Assets__
 * [DevIcons](https://github.com/devicons/devicon)

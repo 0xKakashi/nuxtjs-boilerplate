@@ -50,7 +50,8 @@ export default {
   // },
   // axios: {},
   buildModules: [
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/moment'
   ],
   build: {
     postcss: {

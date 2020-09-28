@@ -14,7 +14,7 @@ export default ({ app }, inject) => {
    * @module Eth
    * @desc   initialized web3 ethereum library
    */
-  const web3 = new Web3(Web3.givenProvider || 'https://localhost:6969')
+  const web3 = new Web3(Web3.givenProvider || 'https://localhost:8545')
   /**
    * @func inject
    * @desc inject class into nuxt context
