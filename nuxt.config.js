@@ -11,7 +11,10 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  // env: {},
+  // env: {
+  //   apiURL: process.env.API_URL,
+  //   cdnURL: process.env.CDN_URL
+  // },
   target: 'static',
   ssr: false,
   loading: { 
@@ -32,7 +35,8 @@ export default {
   ],
   components: true,
   plugins: [
-    '~/plugins/initialize.client.js'
+    '~/plugins/initialize.client.js',
+    '~/plugins/web3.client.js'
   ],
   modules: [
     '@nuxtjs/axios',

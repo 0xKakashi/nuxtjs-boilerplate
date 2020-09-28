@@ -3,6 +3,10 @@
  * @desc tailwind configuration & customization
  * @link https://tailwindcss.com/docs/configuration
  */
+// const { colors } = require('tailwindcss/defaultTheme')
+/**
+ * @module tailwing
+ */
 module.exports = {
   important: true,
   purge: false,
@@ -16,6 +20,12 @@ module.exports = {
       'serif': ['Bitstream Vera Serif', 'Georgia', 'serif']
     },
     extend: {
+      // colors: {
+      //   primary: colors.blue[700],
+      //   secondary: colors.blue[400],
+      //   accent: colors.indigo[600],
+      //   highlight: colors.red[500]
+      // },
       borderWidth: {
         '3': '3px',
         '5': '5px',

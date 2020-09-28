@@ -6,10 +6,12 @@
 
 * Nuxt.js `2.14.6`
 * Tailwind `1.8.10`
+* Web3.js `1.3.0`
 
 __Documentation__
 * [Nuxt.js](https://nuxtjs.org)
 * [Tailwind.css](https://tailwindcss.com/)
+* [Web3.js](https://web3js.readthedocs.io/)
 
 __Nuxt.js Modules__
 * [Nuxt.js PWA](https://pwa.nuxtjs.org/)
@@ -25,9 +27,10 @@ __Assets__
 
 ## TODO
 
-[ ] Vue/Tailwind Base Components
-[ ] API Class Plugins
-[ ] Vuex Analytic Tracking
+* Vue/Tailwind Base Components
+* API Class Plugins
+  * Web3
+* Vuex Analytic Tracking
 
 
 ---
