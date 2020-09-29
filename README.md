@@ -27,15 +27,6 @@ __Assets__
 
 ---
 
-## TODO
-
-* Vue/Tailwind Base Components
-* API Class Plugins
-  * Web3
-* Vuex Analytic Tracking
-
----
-
 ## TEMPLATE
 
 > Environment and configuration commands
@@ -52,6 +43,12 @@ $ touch .env
 # Serve with hot reload at localhost:3000
 $ npm run dev
 ```
+
+__ENV VARIABLES__
+* `API_URL`
+* `CDN_URL`
+* `GTM_ID`
+* `EMAIL_ADDRESS`
 
 ### BUILD
 
