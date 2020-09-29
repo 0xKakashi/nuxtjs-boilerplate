@@ -2,6 +2,8 @@
 
 > Nuxt.js SPA Template
 
+__CREATOR: [0xKakashi](https://github.com/0xkakashi)__
+
 ---
 
 * Nuxt.js `2.14.6`
