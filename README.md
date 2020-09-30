@@ -11,7 +11,10 @@ __CREATOR: [0xKakashi](https://github.com/0xkakashi)__
 * Web3.js `1.3.0`
 
 __Documentation__
-* [Nuxt.js](https://nuxtjs.org)
+* [Node.js(https://nodejs.org/)
+* [NPM](https://npmjs.com/)
+* [JSDoc](https://jsdoc.app/)
+* [Nuxt.js](https://nuxtjs.org/)
 * [Tailwind.css](https://tailwindcss.com/)
 * [Web3.js](https://web3js.readthedocs.io/)
 
